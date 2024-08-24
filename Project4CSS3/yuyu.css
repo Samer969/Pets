@@ -1,0 +1,106 @@
+body{
+    background: rgba(0,0,0,0.1)url("images/tobias-greitzke-uAPf0EHAeeE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    font-family:cursive;
+    font-size: xxx-large;
+    -webkit-text-fill-color: #33523b;
+}
+.navbar ul{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: space-between;
+     box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.9);
+}
+.navbar li{
+    width: 32.3%;
+    list-style: none;
+    display: inline-block;
+}
+.navbar a{
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(40, 8, 8);
+    text-decoration: none;
+}
+.navbar :hover{
+    color:rgb(233, 206, 196);
+    transition: 0.5s;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+}
+img{
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    padding: 11px;
+    border-radius: 100px;
+    animation-name: flashing;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.imagebox :hover{
+ transform: scale(2.5);
+ transition: 1234ms;
+ cursor: pointer;
+}
+p{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+}
+#frontimage{
+    width: 11rem;
+    margin: auto;
+    height: 11rem;
+    display: flex;
+    border-radius: 150px;
+    animation: flash linear 1s infinite;
+}
+#frontimage:hover{
+    cursor: pointer;
+}
+#foota{
+    margin-top: 50px;
+}
+a{
+    font-size: 26.5px;
+    color: rgb(43, 158, 224);
+}
+a:hover{
+    color:rgb(214, 200, 200);
+    transition: 0.7s;
+}
+@keyframes flashing{
+0% {
+    opacity: 1.0;
+}
+25% {
+    opacity: 0.7;
+}
+50%{
+    opacity: 0.5
+}
+75%{
+    opacity: 0.7
+}
+100%{
+    opacity: 1.0;
+}
+}
